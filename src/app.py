@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 
 #Lendo os dados do df a partir de um caminho relativo
-df = pd.read_csv(Path("../Data/vehicles.csv")) 
+df = pd.read_csv(Path("../data/vehicles.csv")) 
 
 #Construindo Histograma
 fig_hist = px.histogram(df, x="odometer") 
