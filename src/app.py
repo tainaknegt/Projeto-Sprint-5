@@ -8,6 +8,9 @@ import streamlit as st
 #Lendo os dados do df a partir de um caminho relativo
 df = pd.read_csv(Path("data/vehicles.csv")) 
 
+#Acrescentando cabeçalho
+st.header('Análise de dados de Veiculos')
+
 #Construindo Histograma
 fig_hist = px.histogram(df, x="odometer") 
 fig_hist.show()
